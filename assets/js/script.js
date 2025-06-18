@@ -14,3 +14,16 @@ $(document).ready(function () {
     }
   });
 });
+
+
+// Toggle icons in the comparison table
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleIcons = document.querySelectorAll('.toggle-icon');
+    
+    toggleIcons.forEach(icon => {
+      icon.addEventListener('click', function() {
+        this.classList.toggle('checked');
+        this.classList.toggle('unchecked');
+      });
+    });
+  });

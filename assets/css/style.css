@@ -473,6 +473,10 @@ body {
     margin: 0 auto 40px;
   }
 
+  .laundry-benefits__center img {
+    height: 350px;
+  }
+
   .laundry-benefits__title-wrapper h2 {
     font-size: 36px;
     line-height: 50px;
@@ -688,6 +692,109 @@ footer .footer-top-section p {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 10px;
+  margin-top: 20px;
+}
+
+.comparison-table th {
+  text-align: center;
+  font-weight: 600;
+  padding: 15px 10px;
+  border-radius: 10px;
+}
+
+.comparison-table td {
+  text-align: center;
+  padding: 15px 10px;
+  background-color: #f2f6fa;
+  border-radius: 10px;
+  vertical-align: middle;
+}
+
+.feature-cell {
+  text-align: left !important;
+  background-color: #f2f6fa !important;
+  padding: 10px 17px !important;
+  padding-bottom: 30px !important;
+}
+
+.feature-title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+
+.feature-description {
+  font-size: 14px;
+  color: #666;
+}
+
+.toggle-icon {
+  width: 43px;
+  height: 44px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.toggle-icon.checked {
+  background-image: url("data:image/svg+xml,%3Csvg width='43' height='44' viewBox='0 0 43 44' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.97069 2.63576C9.64859 2.31613 24.3502 2.5159 27.3464 2.5159C30.2228 2.5159 34.098 2.11637 36.495 3.19509C38.4925 4.11401 40.2103 5.99179 40.6897 8.66863C40.9694 10.3067 40.7696 25.0892 40.7696 28.0857C40.7696 30.9223 41.1691 34.9176 40.0905 37.2349C39.1317 39.3124 37.254 40.9505 34.6173 41.4299C32.8995 41.7096 18.2778 41.5098 15.2016 41.5098C12.4051 41.5098 8.37019 41.9094 6.05309 40.8306C4.05559 39.8718 2.33774 38.034 1.89829 35.3571C1.57869 33.5992 1.77844 19.0564 1.77844 15.98C1.77844 11.3055 0.619894 3.91425 7.97069 2.63576ZM0.220394 34.7978C0.420144 37.9141 2.29779 40.2713 4.09554 41.5098C6.93199 43.4276 9.12924 43.108 12.9245 43.108C17.7185 43.108 30.1429 43.3077 34.0181 43.068C37.2141 42.8682 39.4513 41.0304 40.7696 39.2325C42.5274 36.7954 42.3676 33.9188 42.3676 30.363C42.3676 25.5287 42.6073 13.1433 42.3277 9.26792C42.1279 6.03174 40.2503 3.79439 38.4925 2.5159C35.9357 0.71802 33.259 0.957737 29.6236 0.957737C24.9095 0.957737 12.2853 0.71802 8.52999 0.957737C5.37394 1.1575 3.05684 3.03528 1.77844 4.83316C-0.139156 7.54995 0.180444 9.90717 0.180444 13.6627C0.180444 18.2973 -0.0193056 31.1621 0.220394 34.7978Z' fill='%23019A02'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M29.7034 19.9752C30.4625 19.2561 32.6597 17.1386 33.1391 16.4594C32.8994 16.0599 33.1391 16.3795 32.7396 15.94L30.2627 13.5428C29.3439 13.9424 20.0355 24.0904 18.9569 24.5299L13.4038 19.0563C13.1242 19.1762 13.3639 19.0563 13.1242 19.2561C13.0842 19.2561 13.0443 19.2961 13.0043 19.336L12.6048 19.7355C12.0056 20.3748 10.8071 21.3336 10.4475 22.0528C11.8058 23.2114 18.2378 30.1632 19.1966 30.5228L29.7034 19.9752Z' fill='%23019A02'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.toggle-icon.unchecked {
+  background-image: url("data:image/svg+xml,%3Csvg width='43' height='44' viewBox='0 0 43 44' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.03538 2.71566C9.91303 2.31613 24.2151 2.5159 27.2913 2.5159C29.928 2.5159 34.4024 2.19627 36.5597 3.11519C38.5971 3.9542 40.3949 5.87193 40.9142 8.42891C41.2738 10.1469 41.074 24.7297 41.074 27.7261C41.074 30.403 41.3936 34.8377 40.4748 36.9952C39.6358 39.0328 37.7182 40.8306 35.1614 41.35C33.4036 41.7096 18.9018 41.5098 15.8256 41.5098C10.9917 41.5098 3.72078 42.6685 2.20268 35.6368C1.84313 33.8789 2.04288 19.336 2.04288 16.2996C2.04288 13.5828 1.68333 9.22797 2.64213 7.03057C3.56098 4.83316 5.35873 3.275 8.03538 2.71566ZM0.484829 34.7978C0.724529 37.9141 2.56223 40.2713 4.35998 41.5098C7.19643 43.4276 9.47358 43.108 13.2289 43.108C17.8231 43.108 30.687 43.3077 34.2825 43.068C37.5185 42.8682 39.7557 41.0304 41.0341 39.2325C42.9517 36.5557 42.6321 34.0786 42.6321 30.363C42.6321 25.5687 42.8718 13.1433 42.6321 9.26792C42.4323 6.11165 40.5547 3.83434 38.7569 2.5159C36.1202 0.638115 33.6433 0.957737 29.928 0.957737C25.0541 0.957737 12.7894 0.71802 8.87433 0.957737C5.71828 1.1575 3.36123 2.95538 2.08283 4.83316C0.165229 7.5899 0.484829 9.86721 0.484829 13.6627C0.484829 17.8977 0.245129 31.6815 0.484829 34.7978Z' fill='%23E10201'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.0691 27.5663C13.3887 28.1656 13.9879 28.6051 14.4673 29.1245C14.9867 29.6039 15.4261 30.2032 15.9854 30.5228C16.9842 29.524 20.7395 25.5287 21.5784 25.0892C22.5772 25.6486 25.8531 29.524 27.1315 30.4829C27.6109 30.2032 29.8081 28.0058 30.0478 27.5663C29.0491 26.4876 25.094 22.772 24.6546 22.0129C25.134 21.1339 26.5722 19.9353 27.3712 19.1363C28.2501 18.2973 29.2888 17.3384 30.0478 16.4594C29.7682 15.9401 27.6508 13.8625 27.0915 13.5429L21.5784 18.9365C20.5797 18.4171 17.2239 14.6216 15.9854 13.5429C15.4661 13.8226 13.3887 15.9001 13.0691 16.4594C14.2676 17.8578 17.9829 21.1339 18.4623 22.0129C18.0229 22.8519 14.1877 26.2878 13.0691 27.5663Z' fill='%23E10201'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Responsive styles for the comparison table */
+@media (max-width: 992px) {
+  .comparison-table th,
+  .comparison-table td {
+    padding: 10px 5px;
+  }
+
+  .feature-title {
+    font-size: 16px;
+  }
+
+  .feature-description {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .comparison-table {
+    border-spacing: 5px;
+  }
+
+  .comparison-table th {
+    font-size: 14px;
+  }
+
+  .toggle-icon {
+    width: 35px;
+    height: 35px;
+    background-size: contain;
+  }
+}
+
+@media (max-width: 576px) {
+  .comparison-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .feature-cell {
+    min-width: 200px;
+  }
 }
 
 /* Responsive styles for business benefits section */
@@ -906,7 +1013,7 @@ footer .footer-top-section p {
   }
 
   .faq-section__image {
-    max-width: 500px;
+    max-width: 300px;
     margin: 0 auto 40px;
   }
 }
@@ -1306,6 +1413,8 @@ footer .footer-top-section p {
 
   .why-choose__graph {
     grid-column: 1;
+    max-width: 350px;
+    aspect-ratio: 1/1;
   }
 
   .why-choose__card {
@@ -1410,4 +1519,33 @@ footer .footer-top-section p {
 
 .partner-right .btn {
   background-color: rgba(19, 183, 181, 1);
+}
+
+@media (max-width: 992px) {
+  .partner-left-wrap {
+    align-items: self-start;
+  }
+
+  .partner-left img {
+    max-width: 60px;
+  }
+
+  .partner-left h2 {
+    font-size: 30px;
+  }
+
+  .partner-left ol {
+    font-size: 20px;
+    padding-left: 40px;
+  }
+
+  .partner-right{
+    padding: 15px;
+  }
+
+  .what-we-offer__image img{
+    max-width: 300px;
+    aspect-ratio: 1/1;
+    margin: 0 auto;
+  }
 }
