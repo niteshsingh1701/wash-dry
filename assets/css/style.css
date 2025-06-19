@@ -71,6 +71,11 @@ body {
   border-radius: 10px;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
+  color: #000;
+}
+
+::placeholder {
+  color: #000;
 }
 
 .hero-form .form-row {
@@ -96,13 +101,14 @@ body {
   align-items: center;
   margin: 0 auto;
   text-decoration: none;
-  padding: 12px;
+  padding: 0 12px;
   background-color: #e67d01;
   color: white;
   border: none;
   border-radius: 10px;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 32px;
+  line-height: 80px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -110,6 +116,9 @@ body {
 #franchise-form .btn {
   max-width: 295px;
   margin-left: 0;
+  line-height: 60px;
+  font-size: 32px;
+  font-weight: 700;
 }
 
 .submit-btn:hover {
@@ -168,6 +177,7 @@ body {
 
   .hero-form {
     max-width: 100%;
+    padding: 20px 10px;
   }
 
   .hero-image {
@@ -342,15 +352,15 @@ body {
 .laundry-benefits__subtitle {
   background-color: #5acbc9;
   display: inline-block;
-  padding: 10px 30px;
+  padding: 0px 30px;
   border-radius: 5px;
 }
 
 .laundry-benefits__subtitle p {
   color: #fff;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 70px;
   margin: 0;
 }
 
@@ -414,9 +424,9 @@ body {
 }
 
 .benefit-text p {
-  font-size: 14px;
-  line-height: 1.4;
-  color: #414141;
+  font-size: 20px;
+  line-height: 100%;
+  color: #000;
   margin: 0;
 }
 
@@ -499,6 +509,7 @@ body {
 
   .benefit-point {
     gap: 10px;
+    flex-direction: row;
   }
 }
 
@@ -513,7 +524,8 @@ body {
   }
 
   .laundry-benefits__subtitle p {
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .benefit-icon {
@@ -699,6 +711,8 @@ footer .footer-top-section p {
   border-collapse: separate;
   border-spacing: 10px;
   margin-top: 20px;
+  -webkit-border-vertical-spacing: 15px;
+  -webkit-border-horizontal-spacing: 15px;
 }
 
 .comparison-table th {
@@ -714,10 +728,11 @@ footer .footer-top-section p {
   background-color: #f2f6fa;
   border-radius: 10px;
   vertical-align: middle;
+  box-shadow: 5px 6px 0px rgba(0, 0, 0, 0.05);
 }
 
-.comparison-table td:not(:last-child){
-    min-width: 100px;
+.comparison-table td:not(:last-child) {
+  min-width: 100px;
 }
 
 .feature-cell {
@@ -811,6 +826,7 @@ footer .footer-top-section p {
 @media (max-width: 992px) {
   .business-benefits__content {
     flex-direction: column;
+    gap: 40px;
   }
 
   .business-benefits__text,
@@ -834,6 +850,12 @@ footer .footer-top-section p {
 
   .business-benefits__highlight {
     padding: 20px;
+  }
+
+  .business-benefits__description-wrapper p,
+  .business-benefits__highlight p {
+    font-size: 18px;
+    line-height: 26px;
   }
 }
 
@@ -1051,7 +1073,7 @@ footer .footer-top-section p {
 
 @media (max-width: 576px) {
   .faq-section__title-wrapper h2 {
-    font-size: 30px;
+    font-size: 26px;
   }
 
   .faq-section__title-wrapper p {
@@ -1136,6 +1158,7 @@ footer .footer-top-section p {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  padding-bottom: 93px;
 }
 
 .offer-point {
@@ -1205,6 +1228,7 @@ footer .footer-top-section p {
   .what-we-offer__points {
     flex: 0 0 100%;
     width: 100%;
+    padding-bottom: 30px;
   }
 
   .what-we-offer__image {
@@ -1233,7 +1257,7 @@ footer .footer-top-section p {
 
 @media (max-width: 576px) {
   .what-we-offer__title-wrapper h2 {
-    font-size: 30px;
+    font-size: 26px;
   }
 
   .offer-point {
@@ -1281,7 +1305,7 @@ footer .footer-top-section p {
 
 .why-choose__row {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 17px;
 }
 
@@ -1289,7 +1313,7 @@ footer .footer-top-section p {
   display: grid;
   grid-template-columns: repeat(2, 408px) 1fr;
   gap: 30px;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .why-choose__card {
@@ -1419,11 +1443,17 @@ footer .footer-top-section p {
     grid-column: 1;
     max-width: 350px;
     aspect-ratio: 1/1;
+    margin: 0 auto;
   }
 
   .why-choose__card {
     max-width: 100%;
     min-height: 250px;
+    padding: 15px;
+  }
+
+  .why-choose__title-wrapper {
+    margin-bottom: 30px;
   }
 }
 
@@ -1433,7 +1463,7 @@ footer .footer-top-section p {
   }
 
   .why-choose__title-wrapper {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   .why-choose__title-wrapper h2 {
@@ -1447,7 +1477,7 @@ footer .footer-top-section p {
 
 @media (max-width: 576px) {
   .why-choose__title-wrapper h2 {
-    font-size: 30px;
+    font-size: 26px;
   }
 
   .card-title {
@@ -1499,7 +1529,7 @@ footer .footer-top-section p {
 }
 
 .partner-left ol {
-  padding-left: 20px;
+  padding-left: 35px;
   font-weight: 400;
   font-size: 28px;
 }
@@ -1535,7 +1565,7 @@ footer .footer-top-section p {
   }
 
   .partner-left h2 {
-    font-size: 30px;
+    font-size: 26px;
   }
 
   .partner-left ol {
@@ -1543,13 +1573,42 @@ footer .footer-top-section p {
     padding-left: 40px;
   }
 
-  .partner-right{
+  .partner-right {
     padding: 15px;
   }
 
-  .what-we-offer__image img{
+  .what-we-offer__image img {
     max-width: 300px;
     aspect-ratio: 1/1;
     margin: 0 auto;
+  }
+
+  .laundry-benefits__subtitle p{
+    font-size: 18px;
+    line-height: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  #franchise-form .btn {
+    font-size: 22px;
+    line-height: 40px;
+  }
+
+  .btn {
+    font-size: 22px;
+    line-height: 50px;
+  }
+
+  .become-partner-section {
+    padding: 50px 0;
+  }
+
+  .partner-left {
+    padding: 20px 0;
+  }
+
+  .partner-right .hero-form h3 {
+    font-size: 26px;
   }
 }
