@@ -716,6 +716,10 @@ footer .footer-top-section p {
   vertical-align: middle;
 }
 
+.comparison-table td:not(:last-child){
+    min-width: 100px;
+}
+
 .feature-cell {
   text-align: left !important;
   background-color: #f2f6fa !important;
